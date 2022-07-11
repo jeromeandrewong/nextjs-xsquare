@@ -1,34 +1,17 @@
 import React from "react";
-import FeaturesCard from "./FeaturesCard";
-import smallclasssize from "../public/assets/smallclasssize.svg";
+
 import {
-  AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  ScaleIcon,
+  BellIcon,
+  FingerPrintIcon,
+  UsersIcon,
+  UserGroupIcon,
+  LibraryIcon,
 } from "@heroicons/react/outline";
 
 const FeatureSection = () => {
   return (
-    //     <div className="flex flex-col lg:flex-row ">
-    //       <div className="basis-1/4">
-    //         <FeaturesCard
-    //           image={smallclasssize}
-    //           feature="Small class size"
-    //           details="Classes have a maximum capacity of 8 students which allows for more one-on-one time, easier identification of student's issues and a more conducive learning environment."
-    //         />
-    //       </div>
-    //       <div className="basis-1/4">
-    //         <FeaturesCard image="" feature="" detail="" />
-    //       </div>
-    //       <div className="basis-1/4">
-    //         <FeaturesCard image="" feature="" detail="" />
-    //       </div>
-    //       <div className="basis-1/4">
-    //         <FeaturesCard image="" feature="" detail="" />
-    //       </div>
-    //     </div>
-    <div className="py-20 bg-base-200">
+    // <div className="py-20 bg-base-200">
+    <div className="py-20 px-4 bg-[#dddadb]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-primary font-semibold tracking-wide uppercase">
@@ -38,8 +21,9 @@ const FeatureSection = () => {
             Giving Tuition the right way
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            We want to help students achieve their potential by enabling them to
+            understand what they are learning, assimilate content knowledge and
+            acquire problem solving skill sets
           </p>
         </div>
 
@@ -71,27 +55,27 @@ export default FeatureSection;
 
 const features = [
   {
-    name: "Competitive exchange rates",
+    name: "Small Class Size",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: GlobeAltIcon,
+      "Classes have a maximum capacity of 8 students which allows for more one-on-one time, easier identification of student's issues and a more conducive learning environment.",
+    icon: UserGroupIcon,
   },
   {
-    name: "No hidden fees",
+    name: "Retrieval practice",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: ScaleIcon,
+      "Students will have to actively recall past concepts while learning new concepts which will lead to better understanding of old topics while grasping new ones.",
+    icon: BellIcon,
   },
   {
-    name: "Transfers are instant",
+    name: "Catered to student's needs",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: LightningBoltIcon,
+      "Lessons are adjusted to cater to individual student’s need through formative assessments and test papers reviews.",
+    icon: FingerPrintIcon,
   },
   {
-    name: "Mobile notifications",
+    name: "Aligned with schools",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: AnnotationIcon,
+      "Lesson plans will align with the student’s respective schools so the students can follow along efficiently and retain concepts better.",
+    icon: LibraryIcon,
   },
 ];
